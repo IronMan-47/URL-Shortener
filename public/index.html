@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>URL Shortener</h1>
+            <p>Make your long URLs short and easy to share</p>
+        </header>
+
+        <main>
+
+            <div class="card">
+                <h2>Shorten Your URL</h2>
+
+                <form id="urlForm">
+
+                    <label for="url">Enter Long URL</label>
+
+                    <input
+                        type="text"
+                        id="url"
+                        placeholder="https://example.com/very-long-url"
+                    >
+
+                    <button type="submit">Shorten URL</button>
+
+                </form>
+
+                <p id="message"></p>
+            </div>
+
+            <div class="result-card" id="result">
+                <h2>Your Short URL</h2>
+
+                <div class="short-url-box">
+                    <input type="text" id="shortUrl" readonly>
+                    <button id="copyButton">Copy</button>
+                </div>
+
+                <a id="openLink" href="#" target="_blank">
+                    Open Short URL
+                </a>
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
